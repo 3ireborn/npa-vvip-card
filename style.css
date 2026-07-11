@@ -3,9 +3,8 @@
    Master CSS
 =================================================== */
 
-@import url("css/theme.css");
-@import url("css/layout.css");
-@import url("css/form.css");
-@import url("css/card.css");
-@import url("css/animation.css");
-@import url("css/responsive.css");
+@import url("theme.css");
+@import url("layout.css");
+@import url("form.css");
+@import url("card.css");
+
