@@ -1,0 +1,404 @@
+/* ==========================================
+   NPA SMART SYSTEM VVIP
+   FORM.CSS
+========================================== */
+
+/* ===== FORM GROUP ===== */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+/* ===== LABEL ===== */
+
+label{
+    display:block;
+    margin-bottom:8px;
+    color:#F5F5F5;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+/* ===== INPUT & SELECT ===== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,215,0,.25);
+
+    background:#181818;
+
+    color:#fff;
+
+    font-size:15px;
+
+    transition:.35s;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:90px;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#888;
+
+}
+
+/* ===== FOCUS ===== */
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:#FFD700;
+
+    box-shadow:
+
+        0 0 0 2px rgba(255,215,0,.15),
+
+        0 0 15px rgba(255,215,0,.25);
+
+    background:#202020;
+
+}
+
+/* ===== FILE INPUT ===== */
+
+input[type=file]{
+
+    padding:10px;
+
+    cursor:pointer;
+
+}
+
+input[type=file]::file-selector-button{
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    margin-right:15px;
+
+    cursor:pointer;
+
+    color:#000;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        135deg,
+        #FFD700,
+        #C79A1B
+    );
+
+    transition:.35s;
+
+}
+
+input[type=file]::file-selector-button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===== BUTTON ===== */
+
+button{
+
+    width:100%;
+
+    height:52px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #B8860B,
+        #FFD700
+    );
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 10px 20px rgba(0,0,0,.35);
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 15px 30px rgba(255,215,0,.30);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===== BUTTON ICON ===== */
+
+button i{
+
+    margin-right:8px;
+
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+.btn-dark{
+
+    background:#1A1A1A;
+
+    color:#FFD700;
+
+    border:1px solid rgba(255,215,0,.25);
+
+}
+
+.btn-dark:hover{
+
+    background:#242424;
+
+}
+
+.btn-danger{
+
+    background:linear-gradient(
+        135deg,
+        #8B0000,
+        #D62828
+    );
+
+}
+
+.btn-success{
+
+    background:linear-gradient(
+        135deg,
+        #0E8A49,
+        #19C56B
+    );
+
+}
+
+/* ===== SELECT ===== */
+
+select{
+
+    cursor:pointer;
+
+}
+
+/* ===== COLOR PICKER ===== */
+
+input[type=color]{
+
+    padding:4px;
+
+    height:52px;
+
+    cursor:pointer;
+
+}
+
+/* ===== CHECKBOX ===== */
+
+.checkbox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.checkbox input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/* ===== RANGE ===== */
+
+input[type=range]{
+
+    padding:0;
+
+    accent-color:#FFD700;
+
+}
+
+/* ===== SMALL INFO ===== */
+
+small{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#999;
+
+    font-size:11px;
+
+}
+
+/* ===== DIVIDER ===== */
+
+.form-divider{
+
+    margin:30px 0;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,215,0,.5),
+        transparent
+    );
+
+}
+
+/* ===== CARD OPTION ===== */
+
+.option-box{
+
+    padding:15px;
+
+    margin-top:12px;
+
+    border-radius:14px;
+
+    background:#161616;
+
+    border:1px solid rgba(255,215,0,.18);
+
+    transition:.35s;
+
+}
+
+.option-box:hover{
+
+    border-color:#FFD700;
+
+    box-shadow:
+
+        0 0 15px rgba(255,215,0,.15);
+
+}
+
+/* ===== TOOLBAR ===== */
+
+.toolbar{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+/* ===== STATUS ===== */
+
+.status{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    background:rgba(255,215,0,.08);
+
+    border:1px solid rgba(255,215,0,.25);
+
+    color:#FFD700;
+
+    font-size:13px;
+
+    text-align:center;
+
+}
+
+/* ===== LOADING ===== */
+
+.loading{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.loading i{
+
+    font-size:26px;
+
+    color:#FFD700;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
