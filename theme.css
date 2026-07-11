@@ -1,0 +1,501 @@
+/* ==========================================
+   NPA SMART SYSTEM VVIP
+   THEME.CSS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700;800&display=swap');
+
+/* ========= ROOT ========= */
+
+:root{
+
+    --gold:#FFD700;
+    --gold2:#F6C343;
+    --gold3:#B8860B;
+
+    --silver:#E5E5E5;
+    --silver2:#BFC5CE;
+
+    --black:#050505;
+    --dark:#101010;
+    --dark2:#181818;
+
+    --navy:#071C35;
+
+    --white:#FFFFFF;
+
+    --glass:rgba(255,255,255,.06);
+
+    --border:rgba(255,215,0,.35);
+
+    --radius:18px;
+
+    --shadow:
+    0 15px 45px rgba(0,0,0,.55);
+
+    --transition:.35s ease;
+
+}
+
+/* ========= RESET ========= */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+/* ========= BODY ========= */
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+radial-gradient(circle at top,#1d1d1d,#080808 65%);
+
+color:var(--white);
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+/* ========= TITLE ========= */
+
+h1,h2,h3{
+
+font-family:'Cinzel',serif;
+
+letter-spacing:1px;
+
+}
+
+/* ========= TEXT ========= */
+
+p{
+
+color:#d7d7d7;
+
+line-height:1.6;
+
+}
+
+/* ========= GLASS ========= */
+
+.glass{
+
+background:var(--glass);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:var(--radius);
+
+}
+
+/* ========= GOLD TEXT ========= */
+
+.gold{
+
+background:linear-gradient(
+180deg,
+#fff8c5,
+#ffd700,
+#d8a600,
+#fff2a6);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* ========= SILVER TEXT ========= */
+
+.silver{
+
+background:linear-gradient(
+180deg,
+#ffffff,
+#dadada,
+#b5b5b5);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* ========= GOLD BORDER ========= */
+
+.gold-border{
+
+border:1px solid var(--border);
+
+}
+
+/* ========= GOLD SHADOW ========= */
+
+.gold-shadow{
+
+box-shadow:
+
+0 0 15px rgba(255,215,0,.25),
+
+0 0 35px rgba(255,215,0,.15);
+
+}
+
+/* ========= BUTTON DEFAULT ========= */
+
+button{
+
+cursor:pointer;
+
+border:none;
+
+outline:none;
+
+transition:var(--transition);
+
+font-family:'Poppins',sans-serif;
+
+}
+
+/* ========= INPUT ========= */
+
+input,
+select{
+
+font-family:'Poppins',sans-serif;
+
+}
+
+/* ========= SCROLLBAR ========= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(
+
+180deg,
+
+#FFD700,
+
+#B8860B);
+
+border-radius:20px;
+
+}
+
+/* ========= GOLD LINE ========= */
+
+.gold-line{
+
+height:2px;
+
+width:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+#FFD700,
+
+transparent);
+
+}
+
+/* ========= CARD BACKGROUND ========= */
+
+.black-gold{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#050505,
+
+#141414,
+
+#0c0c0c);
+
+}
+
+/* ========= NAVY GOLD ========= */
+
+.navy-gold{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#081c37,
+
+#10294d,
+
+#07172f);
+
+}
+
+/* ========= PLATINUM ========= */
+
+.platinum{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#2b2b2b,
+
+#555,
+
+#2a2a2a);
+
+}
+
+/* ========= EMERALD ========= */
+
+.emerald{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#06382b,
+
+#0a5641,
+
+#0b2f24);
+
+}
+
+/* ========= DIAMOND ========= */
+
+.diamond{
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#141414,
+
+#303030,
+
+#111111);
+
+}
+
+/* ========= HOLOGRAM EFFECT ========= */
+
+.hologram{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hologram::before{
+
+content:"";
+
+position:absolute;
+
+top:-120%;
+
+left:-120%;
+
+width:240%;
+
+height:240%;
+
+background:
+
+linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.18),
+
+transparent);
+
+transform:rotate(25deg);
+
+animation:holoMove 6s linear infinite;
+
+}
+
+/* ========= SHINE ========= */
+
+.shine{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.shine::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-160%;
+
+width:70%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.30),
+
+transparent);
+
+transform:skewX(-25deg);
+
+animation:shineMove 4s infinite;
+
+}
+
+/* ========= EMBOSS ========= */
+
+.emboss{
+
+text-shadow:
+
+1px 1px 0 #fff4a5,
+
+2px 2px 0 #d4a500,
+
+3px 3px 8px rgba(0,0,0,.5);
+
+}
+
+/* ========= SILVER TAGLINE ========= */
+
+.tagline{
+
+font-size:13px;
+
+letter-spacing:2px;
+
+font-weight:500;
+
+color:#d9d9d9;
+
+text-transform:uppercase;
+
+}
+
+/* ========= GLOW ========= */
+
+.glow{
+
+animation:glow 2.8s infinite alternate;
+
+}
+
+/* ========= KEYFRAMES ========= */
+
+@keyframes holoMove{
+
+0%{
+
+transform:
+
+translateX(-50%)
+
+translateY(-50%)
+
+rotate(25deg);
+
+}
+
+100%{
+
+transform:
+
+translateX(50%)
+
+translateY(50%)
+
+rotate(25deg);
+
+}
+
+}
+
+@keyframes shineMove{
+
+100%{
+
+left:180%;
+
+}
+
+}
+
+@keyframes glow{
+
+from{
+
+filter:drop-shadow(0 0 5px gold);
+
+}
+
+to{
+
+filter:
+
+drop-shadow(0 0 18px gold)
+
+drop-shadow(0 0 28px gold);
+
+}
+
+}
