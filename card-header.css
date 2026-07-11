@@ -1,0 +1,288 @@
+/* ==========================================
+   NPA SMART SYSTEM VVIP
+   CARD HEADER
+========================================== */
+
+/* ===== HEADER ===== */
+
+.cardHeader{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:28px 35px;
+
+    z-index:10;
+
+}
+
+/* ===== LOGO ===== */
+
+.logo{
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    border:2px solid rgba(255,215,0,.25);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 0 18px rgba(255,215,0,.18);
+
+}
+
+.logo img{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:contain;
+
+}
+
+/* ===== BRAND ===== */
+
+.brand{
+
+    margin-left:18px;
+
+}
+
+.brand h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    background:linear-gradient(
+        180deg,
+        #FFF8D2,
+        #FFD700,
+        #C89A18);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 2px 8px rgba(255,215,0,.15);
+
+}
+
+.brand p{
+
+    margin-top:5px;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#D9D9D9;
+
+}
+
+/* ===== TAGLINE SILVER ===== */
+
+#taglinePreview{
+
+    background:linear-gradient(
+        180deg,
+        #FFFFFF,
+        #E3E3E3,
+        #AFAFAF);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    font-weight:500;
+
+}
+
+/* ===== BADGE VVIP ===== */
+
+.vvipBadge{
+
+    position:absolute;
+
+    top:32px;
+
+    right:40px;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        135deg,
+        #FFD700,
+        #B8860B);
+
+    color:#111;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+    box-shadow:
+        0 10px 25px rgba(255,215,0,.25);
+
+}
+
+/* ===== GOLD LINE ===== */
+
+.brandLine{
+
+    margin-top:12px;
+
+    width:280px;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        transparent);
+
+}
+
+/* ===== GLOBE ===== */
+
+.globeIcon{
+
+    position:absolute;
+
+    top:120px;
+
+    right:40px;
+
+    font-size:70px;
+
+    color:rgba(255,215,0,.08);
+
+}
+
+/* ===== STAR ===== */
+
+.brandStars{
+
+    margin-top:10px;
+
+    color:#FFD700;
+
+    letter-spacing:8px;
+
+    font-size:15px;
+
+}
+
+/* ===== HEADER SHINE ===== */
+
+.cardHeader::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-160%;
+
+    width:80%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.22),
+        transparent);
+
+    transform:skewX(-25deg);
+
+    animation:headerShine 7s infinite;
+
+}
+
+@keyframes headerShine{
+
+    100%{
+
+        left:180%;
+
+    }
+
+}
+
+/* ===== GOLD CIRCLE ===== */
+
+.brandCircle{
+
+    position:absolute;
+
+    top:-35px;
+
+    left:-35px;
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    border:2px solid rgba(255,215,0,.12);
+
+}
+
+/* ===== DECORATION ===== */
+
+.headerDecoration{
+
+    position:absolute;
+
+    right:170px;
+
+    top:25px;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    border:1px dashed rgba(255,215,0,.15);
+
+}
+
+/* ===== PREMIUM EFFECT ===== */
+
+.brand h1:hover{
+
+    filter:drop-shadow(0 0 12px gold);
+
+    transition:.35s;
+
+}
