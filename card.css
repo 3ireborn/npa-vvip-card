@@ -1,0 +1,10 @@
+/* ==========================================
+   NPA SMART SYSTEM VVIP
+   CARD.CSS
+========================================== */
+
+@import url("card-base.css");
+@import url("card-header.css");
+@import url("card-member.css");
+@import url("card-security.css");
+@import url("card-effects.css");
