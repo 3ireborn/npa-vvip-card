@@ -1,0 +1,467 @@
+/* ==========================================
+   NPA SMART SYSTEM VVIP
+   CARD BASE
+========================================== */
+
+#card{
+
+    position:relative;
+
+    width:860px;
+    height:540px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+    135deg,
+    #050505 0%,
+    #101010 35%,
+    #181818 60%,
+    #050505 100%);
+
+    border:2px solid rgba(255,215,0,.25);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.75),
+    0 0 40px rgba(255,215,0,.12);
+
+}
+
+/* ========================= */
+
+#card::before{
+
+content:"";
+
+position:absolute;
+
+top:-40%;
+
+left:-40%;
+
+width:180%;
+
+height:180%;
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(255,215,0,.12),
+
+transparent 70%);
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+#card::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.04),
+
+transparent);
+
+mix-blend-mode:screen;
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+.goldLineTop{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+#FFD700,
+
+#FFF4A5,
+
+#FFD700,
+
+transparent);
+
+}
+
+/* ========================= */
+
+.goldLineBottom{
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+#FFD700,
+
+#FFF4A5,
+
+#FFD700,
+
+transparent);
+
+}
+
+/* ========================= */
+
+.goldCorner{
+
+position:absolute;
+
+width:120px;
+
+height:120px;
+
+border:2px solid rgba(255,215,0,.18);
+
+}
+
+/* kiri atas */
+
+.cornerTL{
+
+top:-60px;
+
+left:-60px;
+
+border-radius:50%;
+
+}
+
+/* kanan atas */
+
+.cornerTR{
+
+top:-60px;
+
+right:-60px;
+
+border-radius:50%;
+
+}
+
+/* kiri bawah */
+
+.cornerBL{
+
+bottom:-60px;
+
+left:-60px;
+
+border-radius:50%;
+
+}
+
+/* kanan bawah */
+
+.cornerBR{
+
+bottom:-60px;
+
+right:-60px;
+
+border-radius:50%;
+
+}
+
+/* ========================= */
+/* CHIP E-TOLL */
+/* ========================= */
+
+.chip{
+
+position:absolute;
+
+left:55px;
+
+top:175px;
+
+width:100px;
+
+height:78px;
+
+border-radius:14px;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#f9e27a,
+
+#cfa328,
+
+#fff6bf);
+
+box-shadow:
+
+0 5px 18px rgba(0,0,0,.4),
+
+0 0 12px rgba(255,215,0,.25);
+
+overflow:hidden;
+
+}
+
+/* garis chip */
+
+.chip::before{
+
+content:"";
+
+position:absolute;
+
+left:18px;
+
+top:0;
+
+width:6px;
+
+height:100%;
+
+background:#9d7412;
+
+box-shadow:
+
+18px 0 #9d7412,
+
+36px 0 #9d7412,
+
+54px 0 #9d7412;
+
+}
+
+.chip::after{
+
+content:"";
+
+position:absolute;
+
+top:18px;
+
+left:0;
+
+width:100%;
+
+height:6px;
+
+background:#9d7412;
+
+box-shadow:
+
+0 18px #9d7412,
+
+0 36px #9d7412;
+
+}
+
+/* ========================= */
+
+.cardPattern{
+
+position:absolute;
+
+inset:0;
+
+opacity:.05;
+
+background-image:
+
+repeating-linear-gradient(
+
+45deg,
+
+#FFD700 0,
+
+#FFD700 2px,
+
+transparent 2px,
+
+transparent 18px);
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+.cardGlow{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+radial-gradient(
+
+circle at top right,
+
+rgba(255,215,0,.18),
+
+transparent 40%);
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+.cardShadow{
+
+position:absolute;
+
+inset:0;
+
+box-shadow:
+
+inset 0 0 40px rgba(255,255,255,.03),
+
+inset 0 0 80px rgba(255,215,0,.05);
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+.watermark{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:
+
+translate(-50%,-50%)
+
+rotate(-25deg);
+
+font-size:95px;
+
+font-weight:800;
+
+letter-spacing:10px;
+
+color:rgba(255,255,255,.03);
+
+white-space:nowrap;
+
+pointer-events:none;
+
+}
+
+/* ========================= */
+
+.hologramCircle{
+
+position:absolute;
+
+right:35px;
+
+top:25px;
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+background:
+
+conic-gradient(
+
+red,
+
+orange,
+
+yellow,
+
+lime,
+
+cyan,
+
+blue,
+
+violet,
+
+red);
+
+opacity:.45;
+
+filter:blur(1px);
+
+animation:spinHolo 8s linear infinite;
+
+}
+
+/* ========================= */
+
+@keyframes spinHolo{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
