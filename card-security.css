@@ -1,0 +1,315 @@
+/* ==========================================
+   NPA SMART SYSTEM VVIP
+   CARD SECURITY
+========================================== */
+
+/* ===============================
+   QR CODE
+================================ */
+
+#qrcode{
+
+    position:absolute;
+
+    right:35px;
+
+    bottom:35px;
+
+    width:95px;
+
+    height:95px;
+
+    padding:8px;
+
+    background:#FFFFFF;
+
+    border-radius:12px;
+
+    border:2px solid rgba(255,215,0,.35);
+
+    box-shadow:
+        0 0 18px rgba(255,215,0,.25),
+        0 8px 20px rgba(0,0,0,.45);
+
+}
+
+/* ===============================
+   SECURITY TEXT
+================================ */
+
+.security{
+
+    position:absolute;
+
+    left:45px;
+
+    bottom:25px;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    color:#CFCFCF;
+
+    text-transform:uppercase;
+
+}
+
+/* ===============================
+   GOLD GLOBE
+================================ */
+
+.globe{
+
+    position:absolute;
+
+    right:165px;
+
+    bottom:30px;
+
+    width:85px;
+
+    height:85px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    color:#FFD700;
+
+    opacity:.18;
+
+}
+
+/* ===============================
+   BARCODE
+================================ */
+
+.barcode{
+
+    position:absolute;
+
+    right:145px;
+
+    top:390px;
+
+    width:180px;
+
+    height:42px;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        #111 0px,
+        #111 2px,
+        #FFF 2px,
+        #FFF 4px,
+        #111 4px,
+        #111 6px);
+
+    border-radius:5px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+/* ===============================
+   SERIAL NUMBER
+================================ */
+
+.serialNumber{
+
+    position:absolute;
+
+    right:145px;
+
+    top:440px;
+
+    font-size:11px;
+
+    color:#BBBBBB;
+
+    letter-spacing:2px;
+
+}
+
+/* ===============================
+   WATERMARK
+================================ */
+
+.watermarkLogo{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:
+        translate(-50%,-50%)
+        rotate(-28deg);
+
+    font-size:90px;
+
+    font-weight:800;
+
+    color:rgba(255,255,255,.025);
+
+    letter-spacing:10px;
+
+    white-space:nowrap;
+
+    pointer-events:none;
+
+}
+
+/* ===============================
+   HOLOGRAM
+================================ */
+
+.hologram{
+
+    position:absolute;
+
+    left:45px;
+
+    top:345px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:
+    conic-gradient(
+
+        red,
+
+        orange,
+
+        yellow,
+
+        lime,
+
+        cyan,
+
+        blue,
+
+        violet,
+
+        red
+
+    );
+
+    opacity:.45;
+
+    animation:holoRotate 8s linear infinite;
+
+    filter:blur(.5px);
+
+}
+
+/* ===============================
+   VERIFIED
+================================ */
+
+.verified{
+
+    position:absolute;
+
+    left:130px;
+
+    top:360px;
+
+    color:#7CFF9E;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+}
+
+/* ===============================
+   NFC
+================================ */
+
+.nfc{
+
+    position:absolute;
+
+    right:45px;
+
+    top:120px;
+
+    font-size:13px;
+
+    color:#FFD700;
+
+    letter-spacing:2px;
+
+}
+
+/* ===============================
+   MICRO TEXT
+================================ */
+
+.microText{
+
+    position:absolute;
+
+    left:45px;
+
+    top:435px;
+
+    font-size:8px;
+
+    letter-spacing:1px;
+
+    color:rgba(255,255,255,.45);
+
+}
+
+/* ===============================
+   SECURITY BORDER
+================================ */
+
+.securityBorder{
+
+    position:absolute;
+
+    inset:15px;
+
+    border:1px dashed rgba(255,215,0,.12);
+
+    border-radius:18px;
+
+    pointer-events:none;
+
+}
+
+/* ===============================
+   HOLOGRAM ANIMATION
+================================ */
+
+@keyframes holoRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
